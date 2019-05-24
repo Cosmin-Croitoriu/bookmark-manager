@@ -3,7 +3,7 @@ feature "add bookmarks" do
     visit('/bookmarks/new')
     fill_in('url', with: 'http://www.twitter.com')
     fill_in('title', with: 'Social Media')
-    click_button('Submit')
+    click_button('Add')
     expect(page).to have_link("Social Media", href: "http://www.twitter.com")
   end
 end

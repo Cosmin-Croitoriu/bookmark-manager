@@ -1,3 +1,4 @@
+require 'pg'
 feature 'viewing bookmarks' do
   scenario "it lists bookmarks" do
     Bookmark.create(url: 'http://www.makersacademy.com', title: 'Makers Academy')
